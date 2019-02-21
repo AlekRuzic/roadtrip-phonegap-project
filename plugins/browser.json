@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.phonegap.roadtrip_eric_alek"
+        }
+    }
+}

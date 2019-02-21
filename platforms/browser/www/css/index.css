@@ -1,0 +1,112 @@
+
+body {
+    background-image: url("../img/mapBackground.png");
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+#loginScreen {
+    margin:0 auto;
+    text-align:center;
+    width:90%;
+    height:90%;
+    padding:10px;
+    padding-bottom:50px;
+    margin-top:3%;
+    font-size:20px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+#loginScreen p {
+    font-family: 'Acme', sans-serif;
+}
+
+.labels {
+    font-weight:bold;
+    font-family: 'Acme', sans-serif;
+}
+
+.buttons {
+    height:50px;
+    width:100px;
+}
+
+.inputBox {
+    border:0.5px solid black;
+}
+
+#homeScreen {
+    display:none;
+    margin:0 auto;
+    text-align:center;
+    width:90%;
+    height:90%;
+    padding:10px;
+    padding-bottom:50px;
+    margin-top:3%;
+    font-size:20px;
+}
+
+#newTripScreen {
+    display:none;
+    margin:0 auto;
+    text-align:center;
+    width:95%;
+    padding:10px;
+    margin-top:3%;
+}
+
+#endTripScreen {
+    display:none;
+    margin:0 auto;
+    text-align:center;
+    width:95%;
+    padding:10px;
+    margin-top:3%;
+}
+
+#previousTripScreen {
+    display:none;
+    margin:0 auto;
+    text-align:center;
+    width:95%;
+    padding:10px;
+    margin-top:3%;
+}
+
+#homeButton {
+    display:none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.buttons {
+    width:200px;
+    height:20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.homeButtons {
+    width:80%;
+    height:50px;
+    font-size:30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.textboxes {
+    width:200px;
+}
+
+#tripDescription {
+    width:200px;
+    height:50px;
+}
+
+.tripName {
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:20px;
+}

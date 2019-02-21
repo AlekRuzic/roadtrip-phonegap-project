@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+       <meta http-equiv="Content-Security-Policy" content="img-src 'self' data * default-src * 'unsafe-inline'; style-src 'self' https://code.jquery.com 'unsafe-inline'; media-src *"
+    />
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <!-- additional services -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+    <!-- endregion -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <title>Road Trip</title>
+</head>
+
+<body>
+    <button onclick="backToHome()" id="homeButton">Home</button>
+    <div id="loginScreen">
+            <h1>Road Trip</h1>
+            <p>If this is your first time using Road Trip, please create an account!</p>
+            <p>If you already have an account, please log in.</p>
+
+            <label class="labels" for="email">Email</label></br>
+            <input type="email" name="email" id="email" class="inputBox" value="" />
+    </br></br>
+            <label class="labels" for="password">Password</label></br>
+            <input type="password" name="password" id="password" class="inputBox" value="" />
+    </br></br>
+
+            <button onclick="appAuth.loginUser()">Login</button>
+            <button onclick="appAuth.signUpUser()">Sign Up</button>
+    </div>
+
+    <div id="homeScreen">
+        <h1>Welcome to Road Trip!</h1>
+        </br>
+        <button class="homeButtons" onclick="app.startTrip()">Start Trip</button>
+        </br></br>
+        <button class="homeButtons" onclick="app.endTrip()">End Trip</button>
+        </br></br>
+        <button class="homeButtons" onclick="previousTrips()">Previous Trips</button>
+        </br></br>
+        <button class="homeButtons">Camera</button>
+        </br></br>
+        <button class="homeButtons" onclick="appAuth.signOutUser()">Log Out</button>
+    </div>
+
+    <div id="newTripScreen">
+        <h1>New Trip</h1>
+        <label>Trip Name</label></br>
+        <input type="text" class="textboxes" id="tripName" /></br>
+
+        <label>Starting Location</label></br>
+        <input type="text" class="textboxes" id="startLocation" /></br></br>
+
+        <label>Starting Latitude</label></br>
+        <input type="text" class="textboxes" id="startLat" /></br>
+        <label>Starting Longitude</label></br>
+        <input type="text" class="textboxes" id="startLong" /></br>
+        <label>Starting Altitude</label></br>
+        <input type="text" class="textboxes" id="startAlt" /></br>
+        <button class="buttons" onclick="getStartPosition()">Get Location Coordinates</button>
+        </br></br>
+
+        <label>Trip Description</label></br>
+        <textarea id="tripDescription"></textarea></br>
+        <button class="buttons" onclick="sendStartTripData()">Start Trip</button>
+    </div>
+
+    <div id="endTripScreen">
+        <h1>End Trip</h1>
+
+        <label>End Location Name</label></br>
+        <input type="text" class="textboxes" id="endLocation" /></br></br>
+
+        <button class="buttons" onclick="getEndPosition()">Get End Location Coordinates</button></br>
+        <label> Ending Latitude</label></br>
+        <input type="text" class="textboxes" id="endLat" /></br>
+        <label></label>Ending Longitude</label></br>
+        <input type="text" class="textboxes" id="endLong" /></br>
+        <label></label>Ending Altitude</label></br>
+        <input type="text" class="textboxes" id="endAlt" /></br></br>
+
+        <button class="buttons" onclick="sendEndTripData()">End Trip</button>
+    </div>
+
+    <div id="previousTripScreen">
+        <h1>Previous Trips</h1>
+        <div id="previousTripsDiv">
+
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD6uonrdf1rL8nC3aiRfUa14zUqYra2es8",
+            authDomain: "roadtrip-1d5b1.firebaseapp.com",
+            databaseURL: "https://roadtrip-1d5b1.firebaseio.com",
+            projectId: "roadtrip-1d5b1",
+            storageBucket: "roadtrip-1d5b1.appspot.com",
+            messagingSenderId: "461431680534"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- Start it up -->
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <!-- endregion -->
+</body>
+
+</html>
